@@ -1,0 +1,45 @@
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%);
+}
+
+.wrapper::before {
+	content: "";
+	position: absolute;
+	height: 299px;
+	width: 668px;
+	left: 0;
+	top: 0;
+	background: url("../../../../assets/wave.png");
+	background-repeat: no-repeat;
+	pointer-events: none;
+}
+
+.wrapper::after {
+	content: "";
+	position: absolute;
+	width: 600px;
+	height: 597px;
+	right: -30px;
+	bottom: -300px;
+	background: url("../../../../assets/wave2.png");
+	background-repeat: no-repeat;
+	pointer-events: none;
+}
+
+@media (max-width: 760px) {
+	.wrapper::before {
+		height: 299px;
+		width: 668px;
+		left: 0px;
+		top: -100px;
+	}
+
+	.wrapper::after {
+		width: 500px;
+		height: 497px;
+		right: -30px;
+		bottom: -300px;
+	}
+}

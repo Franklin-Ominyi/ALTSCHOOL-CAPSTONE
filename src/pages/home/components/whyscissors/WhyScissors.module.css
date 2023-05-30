@@ -1,0 +1,42 @@
+.whyTitle {
+	position: relative;
+}
+
+.whyTitle::before {
+	content: "";
+	position: absolute;
+	left: -13px;
+	height: 100%;
+	width: 3px;
+	background: linear-gradient(
+		to bottom,
+		rgba(17, 34, 50, 1),
+		rgba(77, 107, 136, 0)
+	);
+}
+
+.flex1 {
+	width: 30%;
+}
+
+.flex2 {
+	width: 62%;
+}
+
+.card {
+	width: 47%;
+}
+
+@media (max-width: 760px) {
+	.whyTitle {
+		margin: 0 auto;
+	}
+
+	.flex1 {
+		width: 100%;
+	}
+
+	.flex2 {
+		width: 100%;
+	}
+}
