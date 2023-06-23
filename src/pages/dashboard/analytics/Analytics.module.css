@@ -1,0 +1,18 @@
+.table {
+	width: fit-content;
+	min-width: 95%;
+}
+
+.th,
+.td {
+	padding: 10px 40px;
+}
+
+.th {
+	text-align: left;
+	color: var(--primary-300);
+}
+
+tr:nth-child(even) {
+	background-color: var(--primary-light-blue);
+}

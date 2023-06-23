@@ -8,10 +8,14 @@ import Footer from "./components/footer";
 import TrimUrl from "./components/trimurl";
 import LinkOptimization from "./components/linkoptimization";
 import Navbar from "../../components/navbar";
+import { Helmet } from "react-helmet";
 
 const Home: React.FC = () => {
 	return (
 		<div>
+			<Helmet>
+				<title>Home | Scissor | Developed by Franklin Alegu</title>
+			</Helmet>
 			<Navbar />
 			<Landing />
 			<Stats />

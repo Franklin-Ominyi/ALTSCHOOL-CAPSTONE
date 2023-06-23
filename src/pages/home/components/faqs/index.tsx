@@ -30,7 +30,7 @@ const Item = ({ title, description }: ItemPropType) => {
 
 export const Faqs: React.FC = () => {
 	return (
-		<div className={`${styles.faqWrapper} py-32`}>
+		<section className={`${styles.faqWrapper} py-32`} id='faqs'>
 			<div className='content lg:w-1/2'>
 				<h1 className={`${styles.faqsTitle} text-3xl  font-bold`}>FAQs</h1>
 				<div className='mt-3'>
@@ -96,6 +96,6 @@ export const Faqs: React.FC = () => {
 					/>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };

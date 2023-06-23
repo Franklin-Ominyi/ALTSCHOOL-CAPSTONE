@@ -1,0 +1,16 @@
+.main {
+	width: 80vw;
+}
+
+.sidebar {
+	width: 20vw;
+}
+
+@media (max-width: 976px) {
+	.sidebar {
+		width: fit-content;
+	}
+	.main {
+		width: 100%;
+	}
+}

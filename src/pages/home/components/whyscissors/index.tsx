@@ -7,7 +7,10 @@ import customUrl from "../../../../assets/icons/customurl.png";
 
 const WhyScissors: React.FC = () => {
 	return (
-		<div className='content mx-auto flex flex-col items-start justify-between py-5 lg:flex-row lg:w-11/12`'>
+		<div
+			className='content mx-auto flex flex-col items-start justify-between py-5 lg:flex-row lg:w-11/12`'
+			id='features'
+		>
 			<div
 				className={`${styles.flex1} flex flex-col gap-2 items-start text-center lg:text-left`}
 			>

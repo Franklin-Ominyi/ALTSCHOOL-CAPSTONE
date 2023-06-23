@@ -1,0 +1,38 @@
+.modalContent {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.modalContent::-webkit-scrollbar {
+	width: 12px;
+}
+
+.modalContent::-webkit-scrollbar-track {
+	background: #000;
+}
+
+.modalContent::-webkit-scrollbar-thumb {
+	background-color: #000;
+	border-radius: 20px;
+	border: 3px solid var(--primary-400);
+}
+
+@media (max-width: 760px) {
+	.modalContent {
+		left: 0;
+		top: auto;
+		transform: translate(0%, 0%);
+		bottom: 0;
+	}
+
+	.modalContent::-webkit-scrollbar-track {
+		background: none;
+	}
+
+	.modalContent::-webkit-scrollbar-thumb {
+		background-color: none;
+		border-radius: 0;
+		border: none;
+	}
+}

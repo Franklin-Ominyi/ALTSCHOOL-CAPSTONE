@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 const Landing: React.FC = () => {
 	return (
-		<main className={`${styles.landing}`}>
-			<div className='container min-h-screen  mx-auto flex flex-col justify-center gap-7 lg:flex-col-reverse lg:pt-24 lg:pb-6'>
+		<main className={`${styles.landing} relative top-1/4 lg:top-0`}>
+			<div className='container min-h-screen  mx-auto flex flex-col justify-center gap-7 lg:flex-col-reverse lg:pt-48 lg:pb-6'>
 				<div className='container mx-auto flex flex-col w-3/4 lg:w-1/2 '>
 					<img src={home1} alt='home page' />
 					<img src={home2} alt='home page' />

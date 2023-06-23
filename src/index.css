@@ -4,23 +4,11 @@
 @tailwind utilities;
 
 :root {
-	--primary-color: #071c59;
-	--secondary-color: #90ecc2;
-	--secondary-blue: #3e72d7;
-	--primary-white: #ffffff;
-	--primary-grey-background: #f9f9f9;
-	--primary-grey-text: #888888;
-	--primary-black-text: #2c2c2c;
-	--primary-blue: #eef3ff;
-	--primary-light-green: #f2fff9;
-	--primary-light-blue: #eef3ff;
-	--primary-border: #eeeeee;
-	--primary-info-blue: #5e9ce4;
-	--primary-success-green: #27ae60;
-	--primary-error-red: #ec5533;
 	--primary-300: rgba(0, 101, 254, 1);
 	--primary-400: rgba(0, 90, 226, 1);
-	--text-color-main: rgba(20, 20, 20, 1);
+	--primary-light-blue: #eef3ff;
+	--primary-info-blue: #5e9ce4;
+	--primary-error-red: #ec5533;
 }
 
 body {
@@ -29,4 +17,18 @@ body {
 	margin: 0;
 	color: var(--text-color-main);
 	font-family: "Nunito", sans-serif;
+}
+
+body::-webkit-scrollbar {
+	width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+	background: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #000;
+	border-radius: 20px;
+	border: 3px solid var(--primary-400);
 }

@@ -5,13 +5,13 @@ import checkIconWhite from "../../../../assets/icons/check-circle-white.png";
 
 const Pricing: React.FC = () => {
 	return (
-		<div className='content py-36 flex flex-col gap-20'>
+		<section className='content py-14 flex flex-col gap-20 lg:py-36' id='pricing'>
 			<div className={`${styles.heading}`}>
-				<h1 className={`${styles.pricingTitle} text-3xl  font-bold`}>
+				<h1 className={`${styles.pricingTitle} text-3xl text-center font-bold`}>
 					A <span className='text-primary400'>price perfect</span> for your needs.
 				</h1>
 				<div>
-					<p className='ml-11 text-center max-w-lg'>
+					<p className=' text-center max-w-lg lg:ml-11'>
 						From catering for your personal, business, event, socials needs, you can
 						be rest assured we have you in mind in our pricing.
 					</p>
@@ -19,7 +19,7 @@ const Pricing: React.FC = () => {
 			</div>
 			<div className='flex flex-col gap-10  items-center lg:flex-row lg:gap-0'>
 				<div
-					className={`${styles.card} py-8 px-20 border border-primary400 rounded-xl`}
+					className={`${styles.card} py-8 w-full px-5 border border-primary400 rounded-xl lg:px-20`}
 				>
 					<p className='text-xl mb-10'>Basic</p>
 					<h5 className='font-bold text-4xl mb-5'>Free</h5>
@@ -49,7 +49,7 @@ const Pricing: React.FC = () => {
 				</div>
 
 				<div
-					className={`${styles.card} ${styles.professional}  py-8 px-20 border text-white border-primary400 rounded-xl lg:py-28`}
+					className={`${styles.card} ${styles.professional}  py-8 w-full px-5  text-white  rounded-xl lg:py-28 lg:px-20`}
 				>
 					<p className='text-xl mb-10'>Professional</p>
 					<h5 className='font-bold text-4xl mb-5'>$15/month</h5>
@@ -79,7 +79,7 @@ const Pricing: React.FC = () => {
 				</div>
 
 				<div
-					className={`${styles.card} py-8 px-20 border border-primary400 rounded-xl`}
+					className={`${styles.card} py-8 w-full px-5 border border-primary400 rounded-xl lg:px-20`}
 				>
 					<p className='text-xl mb-10'>Teams</p>
 					<h5 className='font-bold text-4xl mb-5'>$25/month</h5>
@@ -111,7 +111,7 @@ const Pricing: React.FC = () => {
 			<button className=' w-fit mx-auto bg-primary400 text-white p-4 px-10 rounded-full hover:bg-primary300'>
 				Select Pricing
 			</button>
-		</div>
+		</section>
 	);
 };
 

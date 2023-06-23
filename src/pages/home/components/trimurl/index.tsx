@@ -20,12 +20,11 @@ const TrimUrl: React.FC = () => {
 		url: "",
 		alias: "",
 	};
-	const handleSubmit = (values: any) => {
+	const handleSubmit = () => {
 		navigate("/dashboard");
-		console.log(values);
 	};
 	return (
-		<div className={`${styles.wrapper} py-20`}>
+		<section className={`${styles.wrapper} py-20`} id='myurl'>
 			<div className='content flex flex-col p-7 justify-center bg-white text-primary300 rounded-xl gap-8 md:w-1/2 xl:w-1/3'>
 				<Formik
 					initialValues={INITIAL_VALUES}
@@ -93,7 +92,7 @@ const TrimUrl: React.FC = () => {
 										By clicking TrimURL, I agree to the{" "}
 										<span className='text-primary400 font-bold'>
 											Terms of Service, Privacy Policy
-										</span>
+										</span>{" "}
 										and Use of Cookies.
 									</p>
 								</div>
@@ -102,7 +101,7 @@ const TrimUrl: React.FC = () => {
 					}}
 				</Formik>
 			</div>
-		</div>
+		</section>
 	);
 };
 

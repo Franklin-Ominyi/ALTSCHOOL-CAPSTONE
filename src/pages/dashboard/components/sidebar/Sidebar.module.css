@@ -1,0 +1,26 @@
+.sidebar {
+	width: 20vw;
+}
+
+.logo {
+	filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(71deg) brightness(107%)
+		contrast(102%);
+}
+
+.activeLink {
+	background-color: var(--primary-info-blue);
+	border-radius: 8px;
+}
+
+@media (max-width: 976px) {
+	.sidebar {
+		width: 55%;
+		transition: left 0.7s ease;
+	}
+}
+
+@media (max-width: 760px) {
+	.sidebar {
+		width: 80%;
+	}
+}

@@ -22,6 +22,7 @@
 	background: url("../../../../assets/trim2.png");
 	background-repeat: no-repeat;
 	transform: rotate(90deg);
+	pointer-events: none;
 }
 
 .wrapper::after {
@@ -33,4 +34,5 @@
 	bottom: -50px;
 	background: url("../../../../assets/trim.png");
 	background-repeat: no-repeat;
+	pointer-events: none;
 }

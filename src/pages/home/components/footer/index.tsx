@@ -9,8 +9,8 @@ import facebook from "../../../../assets/icons/faceboo.png";
 
 const Footer: React.FC = () => {
 	return (
-		<div className={`${styles.footer}`}>
-			<div className='content py-32'>
+		<footer className={`${styles.footer}`}>
+			<div className='content pt-32 pb-4'>
 				<div className='content flex flex-col-reverse gap-14 justify-between items-start  lg:flex-row lg:gap-0'>
 					<div className={`${styles.left} flex flex-col-reverse gap-4 lg:flex-col`}>
 						<div>
@@ -40,9 +40,9 @@ const Footer: React.FC = () => {
 							<Link to='' className='hover:text-primary300'>
 								Integrations & API
 							</Link>
-							<Link to='' className='hover:text-primary300'>
+							<a href='#pricing' className='smooth-scroll hover:text-primary300'>
 								Pricing
-							</Link>
+							</a>
 						</div>
 
 						<div>
@@ -166,24 +166,26 @@ const Footer: React.FC = () => {
 						</div>
 					</div>
 				</div>
-				<p className='flex justify-end mt-4 lg:mt-0 '>
+				<p className='flex justify-between  mt-4 lg:mt-0 lg:justify-end'>
 					<a
 						href=''
-						className='px-4  border-r-2 border-neutral hover:text-primary300'
+						className='hidden px-4 border-r-2 border-neutral hover:text-primary300 lg:px-4 lg:block'
 					>
 						Term of Service
 					</a>
 					<a
 						href=''
-						className='px-4 border-r-2 border-neutral hover:text-primary300'
+						className='hidden px-4 border-r-2 border-neutral hover:text-primary300 lg:px-4 lg:block'
 					>
 						Security
 					</a>
 
-					<p className='px-4'>&copy; Scissor {new Date().getFullYear()}</p>
+					<span className='mx-auto lg:px-4 lg:mx-0'>
+						&copy; Scissor {new Date().getFullYear()}
+					</span>
 				</p>
 			</div>
-		</div>
+		</footer>
 	);
 };
 
