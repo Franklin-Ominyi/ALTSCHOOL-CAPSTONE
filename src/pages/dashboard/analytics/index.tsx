@@ -17,7 +17,7 @@ const Analytics: React.FC = () => {
 
 			<div>
 				{urls.length < 1 && (
-					<div className='shadow-md bg-slate-400 rounded-lg p-10 py-20 flex flex-col gap-10 w-3/4'>
+					<div className='shadow-md bg-slate-400 rounded-lg p-10 py-20 flex flex-col gap-10 w-full lg:w-3/4'>
 						<p className='text-lg font-semibold text-white'>
 							You have not created any short URL. When you do they will appear here
 						</p>

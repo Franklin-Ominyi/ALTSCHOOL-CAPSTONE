@@ -1,7 +1,5 @@
 import { FC, Fragment } from "react";
-
 import { Link } from "react-router-dom";
-
 import logo from "../../assets/logo.svg";
 import notfound from "../../assets/notfound.gif";
 import { Helmet } from "react-helmet";

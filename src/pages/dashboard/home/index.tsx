@@ -92,7 +92,7 @@ const Home: React.FC = () => {
 						<div className='flex flex-col gap-6 mx-auto'>
 							{urls?.map((url: any) => (
 								<div
-									className='flex flex-col gap-3 shadow-md px-6 py-8 border rounded-xl'
+									className='flex flex-col gap-3 shadow-md px-6 py-8 border rounded-xl overflow-hidden'
 									key={url._id}
 								>
 									<div className='flex items-center gap-2'>

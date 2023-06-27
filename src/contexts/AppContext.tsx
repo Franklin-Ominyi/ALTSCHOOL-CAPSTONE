@@ -134,7 +134,7 @@ const AppContextProvider: FC<Props> = ({ children }) => {
 		return response.data;
 	};
 
-	const { data } = useQuery("getURL", getURL);
+	const { data } = useQuery("getURL", getURL, { staleTime: Infinity });
 
 	useEffect(() => {
 		if (data) setUrls(data?.data);

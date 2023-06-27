@@ -27,10 +27,12 @@ const ConfirmEmail: FC = () => {
 							</Link>
 						</div>
 						{!isError && isLoading && (
-							<p className='text-2xl text-primary300 font-semibold'>Verifying Email</p>
+							<p className='text-2xl text-primary300 text-center font-semibold'>
+								Verifying Email
+							</p>
 						)}
 						{!isError && !isLoading && (
-							<p className='text-2xl text-primary300 font-semibold'>
+							<p className='text-2xl text-primary300 text-center font-semibold'>
 								Email Verification Successful
 							</p>
 						)}
