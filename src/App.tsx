@@ -21,6 +21,7 @@ import CreateURL from "./pages/dashboard/createurl/index.tsx";
 import DeleteURL from "./pages/dashboard/deleteurl/index.tsx";
 import Analytics from "./pages/dashboard/analytics/index.tsx";
 import Setting from "./pages/dashboard/setting/index.tsx";
+import NotFound from "./pages/404Page/index.tsx";
 
 const App = () => {
 	const appContext = useContext(AppContext);
@@ -87,7 +88,7 @@ const App = () => {
 		},
 		{
 			path: "/*",
-			element: <h1>404 - Not Found</h1>,
+			element: <NotFound />,
 		},
 	]);
 	return (
