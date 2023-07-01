@@ -68,24 +68,22 @@ const Analytics: React.FC = () => {
 						<div className='flex flex-col gap-6 mx-auto'>
 							{urls?.map((url: any) => (
 								<div
-									className='flex flex-col gap-3 shadow-md px-6 py-8 border rounded-xl'
+									className='flex flex-col gap-3 shadow-md px-6 py-8 border rounded-xl overflow-hidden'
 									key={url._id}
 								>
 									<div className='flex items-center gap-2'>
 										<span className='text-primary300 font-semibold'>
 											<i className='fa fa-external-link' aria-hidden='true'></i>
 										</span>
-										<span>
-											{url.longUrl.length > 50
-												? url.longUrl.substring(0, 50) + "..."
-												: url.longUrl}
-										</span>
+										<span className='break-all'>{url.longUrl}</span>
 									</div>
 									<div className='flex items-center gap-2'>
 										<span className='text-primary300 font-semibold'>
 											<i className='fa fa-link' aria-hidden='true'></i>
 										</span>
-										<span>https://6or.netlify.com/{url.shortUrl}</span>
+										<span className='break-all'>
+											https://6or.netlify.com/{url.shortUrl}
+										</span>
 									</div>
 									<div className='flex items-center gap-2'>
 										<span className='text-primary300 font-semibold'>
