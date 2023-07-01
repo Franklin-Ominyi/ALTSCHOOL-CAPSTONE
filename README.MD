@@ -2,7 +2,7 @@
 
 ### `Developed by Alegu Franklin`
 
-This project is a React Typescript application created using Vite. It allows users to shorten URLs inputing a long URL they want to shorten and the app will provide a short URL that will redirect to that long URL.\
+This project is a React Typescript application created using Vite. It allows users to shorten URLs by inputing a long URL they want to shorten and the app will provide a short URL that will redirect to that long URL when visited.\
 It also has the ability to allow users to input custom short URL, this is important as it gives users the flexibility to use their brand name to customize their short URLs.
 
 ## Interesting Features
